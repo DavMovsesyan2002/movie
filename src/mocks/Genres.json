@@ -1,0 +1,88 @@
+{
+    "genres": [
+        {
+            "value": "Ужасы",
+            "title": "horror"
+        },
+        {
+            "value": "Аниме",
+            "title": "anime"
+        },
+        {
+            "value": "Биографии",
+            "title": "biographies"
+        },
+        {
+            "value": "Боевики",
+            "title": "fighter"
+        },
+        {
+            "value": "Вестерны",
+            "title": "westerns"
+        },
+        {
+            "value": "Военные",
+            "title": "military"
+        },
+        {
+            "value": "Детективы",
+            "title": ""
+        },
+        {
+            "value": "Документальные",
+            "title": ""
+        },
+        {
+            "value": "Драмы",
+            "title": ""
+        },
+        {
+            "value": "Исторические",
+            "title": ""
+        },
+        {
+            "value": "Комедии",
+            "title": ""
+        },
+        {
+            "value": "Криминал",
+            "title": ""
+        },
+        {
+            "value": "Мелодрамы",
+            "title": ""
+        },
+        {
+            "value": "Мультфильмы",
+            "title": ""
+        },
+        {
+            "value": "Мюзиклы",
+            "title": ""
+        },
+        {
+            "value": "Приключения",
+            "title": ""
+        },
+        {
+            "value": "Семейные",
+            "title": ""
+        },
+        {
+            "value": "Триллеры",
+            "title": ""
+        },
+        {
+            "value": "Фантастика",
+            "title": ""
+        },
+        {
+            "value": "Фэнтези",
+            "title": ""
+        },
+        {
+            "value": "Детские",
+            "title": ""
+        }
+    ]
+}

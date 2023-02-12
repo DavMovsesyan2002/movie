@@ -1,0 +1,42 @@
+@import "./variables.scss";
+@import "./css/navbarStyle";
+@import "./css/card";
+
+body {
+    background: $main-backColor;
+    //color:$main-color;
+}
+.marginLeft {
+    margin-left: 50px;
+}
+.bg-1 {
+    background: #1f1b2e;
+}
+.bg-2 {
+    background: #1b1e21;
+}
+.fontSize35 {
+    font-size: 35px;
+}
+.vueperslide {
+    background-size: 100% 100% !important;
+}
+.vueperslide__title {
+    font-size: 70px;
+    color: white;
+}
+.vueperslides__parallax-wrapper {
+    padding-bottom: 50.333% !important;
+}
+.page-link {
+    padding: 16px 25px 16px 25px !important;
+}
+.background-1 {
+    background: #212529;
+}
+.vueperslide__content {
+    color: white;
+}
+.imgNews{
+    height: 100px;
+}
