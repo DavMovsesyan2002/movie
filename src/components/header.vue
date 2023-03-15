@@ -60,40 +60,42 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav navbar-nav-2 ml-auto">
               <li class="nav-item active">
                 <router-link class="nav-link" :to="{ name: 'main' }"
-                  >Кинотеатр<span class="sr-only">(current)</span></router-link
+                  >Cinema<span class="sr-only">(current)</span></router-link
                 >
               </li>
-              <li class="nav-item">
-                <router-link class="nav-link" :to="{ name: 'films' }">Фильмы</router-link>
-              </li>
-              <li class="nav-item">
-                <router-link class="nav-link" :to="{ name: 'films' }"
-                  >Сериалы</router-link
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Мультфильмы</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Новости</a>
-              </li>
+<!--              <li class="nav-item">-->
+<!--                <router-link class="nav-link" :to="{ name: 'films' }">Фильмы</router-link>-->
+<!--              </li>-->
+<!--              <li class="nav-item">-->
+<!--                <router-link class="nav-link" :to="{ name: 'films' }"-->
+<!--                  >Сериалы</router-link-->
+<!--                >-->
+<!--              </li>-->
+<!--              <li class="nav-item">-->
+<!--                <a class="nav-link" href="#">Мультфильмы</a>-->
+<!--              </li>-->
+<!--              <li class="nav-item">-->
+<!--                <a class="nav-link" href="#">Новости</a>-->
+<!--              </li>-->
 
-              <li class="nav-item marginLeft d-flex justify-content-between col-3">
+              <li class="nav-item marginLeft d-flex justify-center col-3">
                 <b-button
                   @click="showModal"
-                  class="btn btn-outline-light btn-floating btn-lg"
+                  class="btn btn-design btn-outline-light btn-floating btn-lg"
                 >
-                  {{ auth ? "Выйти" : "Войти" }}
+                  {{ auth ? "Exit" : "Sign in" }}
                 </b-button>
-                <div class="user-rounded">
+              </li>
+              <li>
+                <div class="user-rounded marginLeft">
                   <router-link :to="{ name: 'account' }">
                     <img
-                      src="../../public/img/male-user.png"
-                      alt="user"
-                      class="rounded-circle"
+                        src="../../public/img/male-user.png"
+                        alt="user"
+                        class="rounded-circle"
                     />
                   </router-link>
                 </div>
@@ -114,10 +116,10 @@
     >
       <div class="p-4" v-if="!signBool">
         <div v-if="!auth">
-          <div class="h1">{{ auth ? "Выйти" : "Войти" }}</div>
+          <div class="h1">{{ auth ? "Exit" : "Sign in" }}</div>
           <div class="col-12 mt-3 mb-5">
             <button class="btn btn-outline-danger" @click="sign">
-              {{ signBool ? "логин" : "Регистрация" }}
+              {{ signBool ? "Sign in" : "Sign up" }}
             </button>
           </div>
           <div class="col-12 bg-danger p-2 mb-2 text-white" v-if="errors">
@@ -145,22 +147,22 @@
           </div>
         </div>
         <div v-else>
-          <div class="h2">Вы уверены</div>
+          <div class="h2">Are you sure</div>
         </div>
         <div class="d-flex justify-content-between mt-4">
           <b-button class="mt-3 col-4 btn btn-danger btn-lg" block @click="hideModal"
-            >Закрыть</b-button
+            >Close</b-button
           >
           <b-button class="mt-3 col-4 btn btn-danger btn-lg" block @click="signIn">{{
-            auth ? "Выйти" : "Вход"
+            auth ? "Exit" : "Sign in"
           }}</b-button>
         </div>
       </div>
       <div class="p-4" v-else>
-        <div class="h1">Создать аккаунт</div>
+        <div class="h1">Create an account</div>
         <div class="col-12 mt-3 mb-5">
           <button class="btn btn-outline-danger" @click="sign">
-            {{ signBool ? "логин" : "Регистрация" }}
+            {{ signBool ? "Sign" : "Sign up" }}
           </button>
         </div>
         <div class="col-12 bg-danger p-2 mb-2 text-white" v-if="errors">
@@ -199,7 +201,7 @@
           </div>
         </div>
         <div class="col-12">
-          <button @click="signUp" class="btn btn-danger mt-3">Регистрация</button>
+          <button @click="signUp" class="btn btn-danger mt-3">Registration</button>
         </div>
       </div>
     </b-modal>

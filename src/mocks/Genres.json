@@ -1,87 +1,87 @@
 {
     "genres": [
         {
-            "value": "Ужасы",
+            "value": "Horror",
             "title": "horror"
         },
         {
-            "value": "Аниме",
+            "value": "Anime",
             "title": "anime"
         },
         {
-            "value": "Биографии",
-            "title": "biographies"
+            "value": "Biographies",
+            "title": "biography"
         },
         {
-            "value": "Боевики",
+            "value": "Militants",
             "title": "fighter"
         },
         {
-            "value": "Вестерны",
+            "value": "Westerns",
             "title": "westerns"
         },
         {
-            "value": "Военные",
+            "value": "Military",
             "title": "military"
         },
         {
-            "value": "Детективы",
+            "value": "Detectives",
             "title": ""
         },
         {
-            "value": "Документальные",
+            "value": "Documentary",
             "title": ""
         },
         {
-            "value": "Драмы",
+            "value": "Drama",
             "title": ""
         },
         {
-            "value": "Исторические",
+            "value": "Historical",
             "title": ""
         },
         {
-            "value": "Комедии",
+            "value": "Comedies",
             "title": ""
         },
         {
-            "value": "Криминал",
+            "value": "Crime",
             "title": ""
         },
         {
-            "value": "Мелодрамы",
+            "value": "Melodramas",
             "title": ""
         },
         {
-            "value": "Мультфильмы",
+            "value": "Cartoons",
             "title": ""
         },
         {
-            "value": "Мюзиклы",
+            "value": "Musicals",
             "title": ""
         },
         {
-            "value": "Приключения",
+            "value": "Adventure",
             "title": ""
         },
         {
-            "value": "Семейные",
+            "value": "Family",
             "title": ""
         },
         {
-            "value": "Триллеры",
+            "value": "Thrillers",
             "title": ""
         },
         {
-            "value": "Фантастика",
+            "value": "Fantastic",
             "title": ""
         },
         {
-            "value": "Фэнтези",
+            "value": "Fantasy",
             "title": ""
         },
         {
-            "value": "Детские",
+            "value": "Baby",
             "title": ""
         }
     ]

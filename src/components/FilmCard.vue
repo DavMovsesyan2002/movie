@@ -43,13 +43,12 @@
           <div class="mr-grid actors-row">
             <div class="col1">
               <p class="movie-actors">
-                <span v-for="(actor, index) in actors" :key="index">{{ actor }} / </span>
+                <span v-for="(actor, index) in actors" :key="index">{{ actor.actress }} / </span>
               </p>
             </div>
           </div>
           <div class="mr-grid action-row">
             <div class="col-12">
-              {{ id }}
               <router-link
                 :to="{ name: 'filmPage', params: { id: id } }"
                 class="btn btn-danger"

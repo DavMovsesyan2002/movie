@@ -19,6 +19,12 @@ body {
     padding: 5px; 
     
 }
+.navbar-nav-2{
+    align-items: center;
+}
+.btn-design{
+    width: 200px;
+}
 .fontSize{
     font-size: 30px;
 }

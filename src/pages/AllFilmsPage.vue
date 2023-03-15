@@ -3,7 +3,7 @@
     <div class="row m-0 mt-5">
       <div class="col-3">
         <div class="col-12 p-5 text-white">
-          <h1>Новости</h1>
+          <h1>News</h1>
         </div>
         <div class="col-12">
           <div class="col-9 m-auto text-white mt-4 d-flex">
@@ -13,8 +13,8 @@
                 class="w-100 h-100"
               />
             </div>
-            <div class="col-8 p-3">
-              Россия доставила в Грецию два вертолёта Ми-8 для борьбы с лесными пожарами
+            <div class="col-8 marginLeft">
+              Russia delivered two Mi-8 helicopters to Greece to fight forest fires
             </div>
           </div>
           <div class="col-9 m-auto text-white mt-4 d-flex">
@@ -24,15 +24,15 @@
                 class="w-100 h-100"
               />
             </div>
-            <div class="col-8 p-3">
-              Россия доставила в Грецию два вертолёта Ми-8 для борьбы с лесными пожарами
+            <div class="col-8 marginLeft">
+              Russia delivered two Mi-8 helicopters to Greece to fight forest fires
             </div>
           </div>
         </div>
         <div class="col-12 p-5 text-white">
           <div class="col-12 d-flex justify-content-between">
             <div class="col-4">
-              <h5>Жанры</h5>
+              <h5>Genres</h5>
               <ul class="text-white">
                 <li v-for="(genre, index) in genres.genres" :key="index">
                   <router-link class="text-white" :to="genre.title">{{
@@ -47,11 +47,11 @@
               </ul>
             </div>
             <div class="col-4">
-              <h5>По году</h5>
+              <h5>By year</h5>
               <ul class="text-white">
                 <li v-for="(item, index) in date" :key="index">{{ item }}</li>
               </ul>
-              <h5>По странам</h5>
+              <h5>By country</h5>
               <ul class="text-white">
                 <li v-for="(country, index) in countries" :key="index">{{ country }}</li>
               </ul>
@@ -74,16 +74,16 @@
         </div>
         <div class="background-1 p-4">
           <div class="row">
-            <div class="col-12 text-white h1"><i class="fas fa-sort"></i> Фильтры</div>
+            <div class="col-12 text-white h1"><i class="fas fa-sort"></i> Filters</div>
             <div class="col-12 d-flex justify-content-between mt-4">
               <div class="col m-1">
-                <label for="genres" class="form-label text-white h4">Жанры</label>
+                <label for="genres" class="form-label text-white h4">Genres</label>
                 <select
                   v-model="filterGenres"
                   id="formGroupExampleInput2"
                   class="form-select form-select-lg mb-3 mt-2 p-2"
                 >
-                  <option value="genres">Жанры</option>
+                  <option value="genres">Genres</option>
                   <option
                     v-for="(genre, index) in genres.genres"
                     :value="genre"
@@ -94,7 +94,7 @@
                 </select>
               </div>
               <div class="col m-1">
-                <label for="country" class="form-label text-white h4">Страны</label>
+                <label for="country" class="form-label text-white h4">Countries</label>
                 <select
                   v-model="filterCountry"
                   id="country"
@@ -107,13 +107,13 @@
                 </select>
               </div>
               <div class="col m-1">
-                <label for="year" class="form-label text-white h4">Годы</label>
+                <label for="year" class="form-label text-white h4">years</label>
                 <select
                   v-model="filterYear"
                   id="year"
                   class="form-select form-select-lg mb-3 mt-2 p-2"
                 >
-                  <option value="year">годы</option>
+                  <option value="year">years</option>
 
                   <option v-for="(item, index) in date" :key="index">
                     {{ item }}
@@ -121,7 +121,7 @@
                 </select>
               </div>
               <div class="col m-1">
-                <label for="country" class="form-label text-white h4">Рейтинг</label>
+                <label for="country" class="form-label text-white h4">Rating</label>
                 <select id="country" class="form-select form-select-lg mb-3 mt-2 p-2">
                   <option v-for="(item, index) in rating" :key="index">
                     {{ item }}
@@ -131,14 +131,14 @@
             </div>
             <div class="col-12">
               <button class="btn btn-danger col-4 btn-lg" @click="updateData()">
-                Найти
+                Find
               </button>
             </div>
           </div>
         </div>
         <div class="container bg-2 d-flex w-100 p-3 mx-auto flex-column">
           <main role="main" class="inner cover">
-            <div class="col-12 h1 text-white">Фильмы</div>
+            <div class="col-12 h1 text-white">Movies</div>
             <div class="card-group justify-content-around">
               <FilmCard
                 v-for="(film, index) in pageOfItems"
@@ -168,7 +168,7 @@
       </div>
       <div class="col-3">
         <div class="col-12 p-5 text-white">
-          <h1>Реклама</h1>
+          <h1>Advertising</h1>
         </div>
         <div class="col-12">
           <div class="col-9 m-auto text-white mt-4">
@@ -221,22 +221,15 @@ export default {
       rating: null,
       slides: [
         {
-          title: "Бегущая в лабиринте",
-          content: "Photo by Max Rive",
-          image: require("../../public/img/films/begushayavlabirinte2.jpg"),
-          link:
-            "/films/",
-        },
-        {
-          title: "Поступь хаоса",
-          content: "Photo by Max Rive",
+          title: "Chaos walking",
+          content: "",
           image: require("../../public/img/postupXaos.jpg"),
           link:
-            "/films/6",
+              "/films/6",
         },
         {
           title: "ASTRAL 2",
-          content: "Photo by Max Rive",
+          content: "",
           image: require("../../public/img/Astral.jpg"),
           link:
             "/films/1",

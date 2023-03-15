@@ -81,18 +81,18 @@ export default {
                 gendere: 'male',
             },
             countries: [
-                {
-                    labe:'Россия',
-                    value:'Russia'
-                },
-                {
-                    labe:'Армения',
-                    value:'Armenia'
-                },
-                {
-                    labe:'Франция',
-                    value:'France'
-                }
+              {
+                label:'Russia',
+                value:'Russia'
+              },
+              {
+                label:'Armenia',
+                value:'Armenia'
+              },
+              {
+                label:'France',
+                value:'France'
+              }
             ],
             themes:[//massiv
                 {

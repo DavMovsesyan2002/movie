@@ -1,3 +1,3 @@
 export default [
-    'Американские','Английские','Русские','Индийские','Немецкие','Французские'
+    'American','English','Russian','Indian','German','French'
 ]

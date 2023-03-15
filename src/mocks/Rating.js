@@ -1,2 +1,2 @@
-export default ['больше 9','больше 8','больше 7','больше 6','больше 5']
+export default ['over 9','over 8','over 7','over 6','over 5']
 
